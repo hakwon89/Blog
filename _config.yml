@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "블로그이름"
+title                    : "HAK's Blog"
 title_separator          : "-"
-subtitle                 : "subtitle" # site tagline that appears below site title in masthead
+subtitle                 : "연습 공간" # site tagline that appears below site title in masthead
 name                     : "Hyeong-Ahn Kwon"
 description              : ""
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "http://hakwon89.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "hakwon89" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -93,7 +93,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Hyeong-Ahn Kwon (권형안"
+  name             : "H.-A. Kwon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Ph. D. in Atmospheric Science"
   location         : "Seoul, South Korea"
@@ -101,7 +101,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:hakwon89@gmail.com
+      # url: mailto:hakwon89@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
