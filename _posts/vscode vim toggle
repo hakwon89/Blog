@@ -1,0 +1,14 @@
+
+키 스토르크 연속 (예, h,j,k,l 누르고 있으면 계속 적용)으로 사용하기
+
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+vscode 재실행
+
+원상복귀 시키기
+
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true
+
+참조: https://stackoverflow.com/q/39972335
+
+
+
