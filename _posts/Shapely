@@ -1,0 +1,17 @@
+
+두개의 라인으로 겹친 polygon 만들기
+from shapely.geometry import LineString, Polygon, MultiLineString
+
+a = LineString([(0, 3), (5, 3)])
+b = LineString([(0, 5), (5, 5)])
+poly = Polygon([(1, -2), (1, 7), (4, 7), (4, -2)])
+
+# Create a polygon from the lines
+multi_line = MultiLineString([a, b])
+line_poly = multi_line.convex_hull
+
+# get the intersection
+intersection = poly.intersection(line_poly)
+print(intersection)
+
+https://gis.stackexchange.com/questions/264150/how-to-split-a-shapely-polygon-with-two-linestrings-and-get-the-middle-polygon
