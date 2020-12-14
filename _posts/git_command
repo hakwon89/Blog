@@ -1,0 +1,7 @@
+git 명령어 정리
+
+git rebase
+브랜치 분기 시점(base)을 새롭게 정의할 때 이용
+
+> git chekcout 브랜치
+> git rebase master
