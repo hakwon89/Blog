@@ -1,0 +1,49 @@
+
+
+설정 내용
+
+set tabstop=4       # tab 간격 4칸
+set expandtab       # tab 문자를 공백문자로 변환
+set softtabstop=4   # tab 간격을 공백문자로 변환 후, 삭제시 4칸단위로 삭제 (tapstop도 같이 변함)
+set autoindent      # 자동 들여쓰기
+set smartindent     # 스마트 자동 들여쓰기
+
+
+참조: https://101story.tistory.com/entry/vivim-%ED%8E%B8%EC%A7%91%EA%B8%B0-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0
+
+set tabstop=4　　　　　      #탭간격 4칸
+set shiftwidth=2　　　　      #>>나 <<사용시 들여쓰기 간격
+set expandtab　　　　         #tab 문자를 공백문자로 변환
+set softtabstop=2　　　       #tab 간격을 공백으로 변환하면, 삭제시 두칸단위로 삭제
+set visualbell　　　　　         #경고 비프음 대신 한번 번쩍이는 비쥬얼 벨로 경고 사용
+set nobackup　　　　            #백업 파일을 생성하지 않습니다.
+set cindent　　　　　            #c언어 스타일의 들여쓰기 사용
+set autoident　　　　　         #자동 적인 들여쓰기 사용
+set smartindent　　　　        #좀 더 지능적인 들여쓰기 사용
+set enc-euc-kr　　　     　      #인코딩 한글로 지정. 한글 삭제시 한글 단위로 삭제(2byte)
+set incsearch　　　　           #키워드를 입력할때마다 검색하는 점진검색 사용
+syntax on　　　　　　           #파일 종류에 따라 구문 강조
+set background=dark　        #배경을 어두운 색으로 지정
+colorscheme evening　         #VI 색상 테마를 evening으로 지정
+set backspace=eol,start,indent  #줄의 끝, 시작, 들여쓰기에서 백스페이시 이전 줄과 연결
+set history=1000　　　       #VI 편집기록 1000 개 저장
+set hlsearch　　　　     　    #검색어 강조
+set ignorecase　　　　         #검색, 편집, 치환 시에 대소문자 구분 않는다.
+set showmatch　　　　        #(),{}에서 닫는 괄호를 입력할때, 일치하는 괄호 보여줌
+set showcmd                      # (부분적인) 명령어를 상태라인에 보여줌.
+filetype on                        #파일 종류에 따라 구문 강조.
+set number                       #각행의 number를 표시(<->nonumber)
+set nocompatible              #vim 디폴트 기능들을 사용함
+set novisualbell                 #비주얼벨 기능을 사용하지 않음.
+set title                              #타이틀 바에 현재 편집중인 파일을 표시
+set enc=UTF-8                   #인코딩
+set fileencodings=UTF-8    #파일 인코딩
+set t_ti=t_te=                    #vi를 닫아도 화면 내용이 그대로 있음.
+set ts=4                             #tab 사이즈를 스페이스4
+set sw=4                           #들려쓰는 사이즈
+set et                                 #텝을 스페이스로 변경
+set ruler                             #우측하단에 커서 위치의 라인과 컬럼을 표시 
+color desert                       #칼라스킴 선택
+syntax enable                    #문법 표시
+
+출처: https://101story.tistory.com/entry/vivim-편집기-설정하기 [Just do your own things]
