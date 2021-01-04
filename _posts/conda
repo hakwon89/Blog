@@ -1,3 +1,6 @@
 기존 환경 복사하여 새로운 
 conda create -n [env-name] --clone [src-env-name]
 출처: https://jangjy.tistory.com/341 [살다보니..]
+
+가상환경 삭제
+conda remove --name 환경이름 --all
