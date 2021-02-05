@@ -24,6 +24,8 @@ ssh -N -f -L 2200:cfa0.cfa.harvard.edu:22 hkwon@login.cfa.harvard.edu
 scp -P 2200 보낼파일 hkwon@localhost:/home/hkwon/tmp
 (cfa0 머신 비밀번호 입력)
 
+rsync -avzr -e "ssh -p 2200" 보낼파일 hkwon@localhost:/home/hkwon/tmp
+
 
 선언된 포트 번호 지우기
 lsof -ti:2200 | xargs kill -9
