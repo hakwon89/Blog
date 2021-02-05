@@ -1,0 +1,35 @@
+ssh 터널링 연결하기
+
+https://www.cfa.harvard.edu/cf/services/remote/ssh.html
+
+9. How do I copy files using SCP/SFTP?
+
+To set up a tunnel to sftp/scp from your remote machine to an internal CF machine:
+
+From your machine:
+
+ssh -N -f -L 2200:finaldestination:22 username@login.cfa.harvard.edu (login with login username/password)
+
+This sets up a tunnel from your local machine's port 2200 to the ssh (and scp/sftp) port on the internal machine "finaldestination." The "-N -f" options fork this to the backround on "login" and returns you to your local machine.
+
+Then you can run "sftp -o Port=2200 username@localhost", or any sftp client using "localhost" as the hostname and 2200 as the port number, and log in using your CF password and then go ahead and transfer files.
+
+예시
+
+hydra에서 접속후
+
+ssh -N -f -L 2200:cfa0.cfa.harvard.edu:22 hkwon@login.cfa.harvard.edu
+(login 비밀번호 입력)
+
+scp -P 2200 보낼파일 hkwon@localhost:/home/hkwon/tmp
+(cfa0 머신 비밀번호 입력)
+
+
+선언된 포트 번호 지우기
+lsof -ti:2200 | xargs kill -9
+
+선언된 포트 번호 보기
+netstat -tulpn | grep 2200
+
+https://askubuntu.com/questions/447820/ssh-l-error-bind-address-already-in-use
+
