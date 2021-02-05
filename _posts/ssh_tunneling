@@ -26,6 +26,9 @@ scp -P 2200 보낼파일 hkwon@localhost:/home/hkwon/tmp
 
 rsync -avzr -e "ssh -p 2200" 보낼파일 hkwon@localhost:/home/hkwon/tmp
 
+패스워드 prompt 안뜨게하기
+sshpass -p "password" rsync -avzr -e "ssh -p 2200" 보낼파일 hkwon@localhost:/home/hkwon/tmp
+https://unix.stackexchange.com/questions/111526/how-can-i-rsync-without-prompt-for-password-without-using-public-key-authentica
 
 선언된 포트 번호 지우기
 lsof -ti:2200 | xargs kill -9
