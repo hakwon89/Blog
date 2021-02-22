@@ -5,3 +5,9 @@ git rebase
 
 > git chekcout 브랜치
 > git rebase master
+
+
+git difftool 이용
+> git difftool -t tool_name
+
+-y option: no-prompt
