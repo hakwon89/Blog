@@ -20,4 +20,15 @@ vscode 재실행
 참조: https://stackoverflow.com/q/39972335
 
 
+vs code에서 user setting 하는법
 
+macOS $HOME/Library/Application Support/Code/User/settings.json
+
+여기에 추가해주기
+
+예시)
+vim 편집기 기본으로 hlsearch 추가해주기
+{
+    "vim.hlsearch": true,
+
+}
