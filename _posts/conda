@@ -5,6 +5,8 @@ conda create -n [env-name] --clone [src-env-name]
 가상환경 삭제
 conda remove --name 환경이름 --all
 
+yml 파일 이용하여 환경 설치
+conda env create --file yml_file.yml
 
 콘다 환경확인
 conda info --envs
