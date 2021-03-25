@@ -10,3 +10,7 @@ conda env create --file yml_file.yml
 
 콘다 환경확인
 conda info --envs
+
+conda channel 선택
+conda install numpy=(version) -c (channel)
+channel: anaconda, conda-forge, ...
