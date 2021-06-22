@@ -8,7 +8,7 @@ git rebase
 
 커밋 메시지 수정
 가장 최근 커미 내용 수정
-> git commit --ammend
+> git commit --amend
 
 
 git difftool 이용
