@@ -6,6 +6,10 @@ git rebase
 > git chekcout 브랜치
 > git rebase master
 
+커밋 메시지 수정
+가장 최근 커미 내용 수정
+> git commit --ammend
+
 
 git difftool 이용
 > git difftool -t tool_name
