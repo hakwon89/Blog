@@ -8,6 +8,9 @@ conda remove --name 환경이름 --all
 yml 파일 이용하여 환경 설치
 conda env create --file yml_file.yml
 
+yml로 환경 파일 만들기
+conda env export > environment.yml
+
 콘다 환경확인
 conda info --envs
 
