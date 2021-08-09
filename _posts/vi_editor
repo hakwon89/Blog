@@ -47,3 +47,13 @@ color desert                       #칼라스킴 선택
 syntax enable                    #문법 표시
 
 출처: https://101story.tistory.com/entry/vivim-편집기-설정하기 [Just do your own things]
+
+붙여넣기 할때 auto indent 끄는법
+:set paste
+
+붙여넣기 후
+:set nopaste
+
+출처: https://stackoverflow.com/questions/2514445/turning-off-auto-indent-when-pasting-text-into-vim
+
+
