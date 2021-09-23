@@ -15,3 +15,17 @@ git difftool 이용
 > git difftool -t tool_name
 
 -y option: no-prompt
+
+git 안에 git repository: submodule (https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+> git submodule add https://github.com/chaconinc/DbConnector
+
+> git diff -cached (submodule directory 이름) : 디렉토리 아래의 파일 수정사항을 직접 추적하지 않고 디렉토리 통째로 특별한 커밋으로 취급
+
+submodule이 포함된 프로젝트 git clone 또는 pull 할때 submodule 디렉토리가 비어있음
+추가로 아래 명령어 해줘야함
+> git submodule init     : 서브모듈 정보를 기반으로 로컬 환경선ㄹ정 파일이 준비
+> git submodule update   : 서브모듈의 리모트 저장소에서 데이터를 가져옴
+
+서브모듈 업데이트
+> cd submodule_directory
+> git submodule update --remote
