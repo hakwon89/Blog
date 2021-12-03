@@ -33,3 +33,9 @@ submodule이 포함된 프로젝트 git clone 또는 pull 할때 submodule 디�
 서브모듈 업데이트
 > cd submodule_directory
 > git submodule update --remote
+
+로컬저장소 원격저장소 연결
+1. github에 저장소 생성
+2. 로컬저장소와 원격저장소 연결
+> git remote add origin <github link>
+3. git push origin --all
