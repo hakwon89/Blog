@@ -15,6 +15,9 @@ git rebase
 수정하고 싶은 커밋 앞의 pick -> reword 로 변경
 차례로 창이 뜨고 수정후 변경 내용 확인
 
+git commit 취소
+git rebase HEAD^ (직전 commit 취소)
+
 git difftool 이용
 > git difftool -t tool_name
 
