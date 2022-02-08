@@ -42,3 +42,14 @@ submodule이 포함된 프로젝트 git clone 또는 pull 할때 submodule 디�
 2. 로컬저장소와 원격저장소 연결
 > git remote add origin <github link>
 3. git push origin --all
+
+로컬디스크에 원격저장소 만들기
+1. 원격저장소(bare-repository) 만들기
+> git init --bare
+2. 로컬저장소와 원격저장소 연결
+> git remote add origin <원격저장소 경로>
+> git remote -v
+3. 로컬저장소 파일 원격저장소에 저장
+> git push -u origin master
+
+
