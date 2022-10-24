@@ -52,4 +52,7 @@ submodule이 포함된 프로젝트 git clone 또는 pull 할때 submodule 디�
 3. 로컬저장소 파일 원격저장소에 저장
 > git push -u origin master
 
+re-authenticate
+> gh auth login
+https://stackoverflow.com/questions/71173441/github-git-credential-erase-operation-not-supported
 
