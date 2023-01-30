@@ -1,0 +1,27 @@
+공유기 포트포워딩을 통한 학외 외부접속
+
+1. 학교에서 공인ip에 대해 외부공개된 포트를 하나 받음
+
+2. 공유기 설정 접속(공유기 네트워크 내에서)
+  iptime인 경우는 192.168.0.1
+  
+3. 고급설정-특수기능-DDNS(Advanced Setup-Utility-DDNS)
+  host name과 user ID(이메일주소)로 설정
+  이 설정을 통해 hostname.iptime.org로 접속가능해 짐
+  
+4. 보안기능-공유기접속관리(Firewall-Mgmt Access List)
+  원격관리포트(Remote Mgmt port) 사용에 체크하고 사용하고자 하는 포트번호 입력(아무거나)
+  주의! 학교에서 제공해준 외부 포트 사용하지 말것
+
+5. 포트포워딩 (NAT/라우터 관리 NAT/Routing)
+  사용자정의(Port Forward(User))를 선택
+  규칙이름(Rule Name)을 내가 이해하기 쉽게 설정 (ex) ssh, imac ssh 등
+  ssh의 경우 Protocol TCP/UDP
+  내부 IP 주소, 공유기 네트워크에 연결된 내부 아이피 주소 입력 (iptime인 경우 192.108.0.xx)
+  (중요) 외부포트: 학교에서 공개한 포트; 내부포트: ssh 접속 포트(ex 22)
+  즉, 외부포트에서 접속하면 바로 내부포트로 연결시켜주는 역할
+  
+6. 테스트
+  외부 네트워크에서 ssh@hostname.iptime.org -p 포트포워딩외부포트
+  
+  
