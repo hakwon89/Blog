@@ -1,0 +1,4 @@
+
+spack은 기본적으로 설치되어 있는 package/library를 사용하려고 함
+새로운 버전을 설치하고 싶을때
+spack install --fresh mpich
